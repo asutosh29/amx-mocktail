@@ -14,7 +14,6 @@ const Navbar = () => {
         start: "top -50",
         end: "bottom top",
         toggleActions: "play none none reverse",
-        // markers: true, // Show markers for debugging
       },
     })
 

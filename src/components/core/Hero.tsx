@@ -43,7 +43,6 @@ const Hero = () => {
           start: "top top",
           end: "bottom top",
           scrub: true,
-          markers: true, // Show markers for debugging
         },
       })
       .to(".right-leaf", { y: 100 }, 0) // 0 here is the position on timeline
