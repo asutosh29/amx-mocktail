@@ -69,7 +69,7 @@ const Menu = () => {
   const prevCocktail = getCocktailAt(-1)
   const nextCocktail = getCocktailAt(1)
   return (
-    <section id="menu" aria-labelledby="menu-heading">
+    <section id="menu" aria-labelledby="menu-heading" className="px-20">
       <img
         src="/images/slider-left-leaf.png"
 

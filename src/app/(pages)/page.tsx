@@ -2,12 +2,13 @@
 import gsap from "gsap"
 import { ScrollTrigger, SplitText } from "gsap/all"
 
-import Hero from "@/components/core/Hero"
-import Navbar from "@/components/core/Navbar"
-import CockTails from "@/components/core/CockTails"
 import About from "@/components/core/About"
 import Art from "@/components/core/Art"
+import CockTails from "@/components/core/CockTails"
+import Hero from "@/components/core/Hero"
 import Menu from "@/components/core/Menu"
+import Navbar from "@/components/core/Navbar"
+import Contact from "@/components/core/Contact"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <Art />
       <Menu />
+      <Contact />
     </main>
   )
 }
