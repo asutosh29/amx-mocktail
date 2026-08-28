@@ -7,6 +7,7 @@ import Navbar from "@/components/core/Navbar"
 import CockTails from "@/components/core/CockTails"
 import About from "@/components/core/About"
 import Art from "@/components/core/Art"
+import Menu from "@/components/core/Menu"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -18,6 +19,7 @@ export default function Home() {
       <CockTails />
       <About />
       <Art />
+      <Menu />
     </main>
   )
 }
