@@ -31,6 +31,9 @@ const dmSerifText = DM_Serif_Text({
 export const metadata: Metadata = {
   title: "Velvet Pour",
   description: "A Cocktail store with a modern twist",
+  icons: {
+    icon: "/images/logo.png",
+  }
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -46,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         dmSerifText.variable,
       )}
     >
-      <body className="flex min-h-full flex-col">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

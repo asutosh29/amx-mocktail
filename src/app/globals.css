@@ -124,6 +124,16 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+html,
+body {
+  @apply bg-background text-foreground;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* Custom utility classes */
 @utility flex-center {
   @apply flex items-center justify-center;
@@ -167,7 +177,7 @@
   }
 
   nav {
-    @apply fixed z-50 w-full;
+    @apply fixed z-50 w-full top-0 inset-x-0 px-10;
 
     div {
       @apply container mx-auto flex flex-col items-center gap-5 px-5 py-5 md:flex-row md:justify-between lg:px-0;
@@ -391,7 +401,7 @@
       @apply relative z-10 mb-20 grid grid-cols-2 gap-10 sm:mb-32 md:mx-auto md:max-w-6xl md:grid-cols-4 md:gap-20;
 
       button {
-        @apply hover:text-yellow hover:border-yellow font-modern-negra cursor-pointer border-b-1 pb-2 text-xl transition-colors md:text-3xl;
+        @apply hover:text-yellow hover:border-yellow font-modern-negra cursor-pointer border-b pb-2 text-xl transition-colors md:text-3xl;
       }
     }
 
@@ -478,23 +488,13 @@
 }
 
 /* Global Overrides */
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
+    border: solid 1px red;
   }
-  html,
-  body {
-    @apply bg-background text-foreground;
-    background-color: #000;
-    color: #fff;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    width: 100%;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+  
   html {
     @apply font-modern text-foreground;
   }
-}
+} */
