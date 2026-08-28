@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { DM_Serif_Text, Mona_Sans } from "next/font/google"
 import localFont from "next/font/local"
 
+import Preloader from "@/components/core/Preloader"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem={false}
           disableTransitionOnChange
         >
+          <Preloader />
           {children}
         </ThemeProvider>
       </body>

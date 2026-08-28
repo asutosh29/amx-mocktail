@@ -172,6 +172,14 @@ body {
 
 /* Custom Component Classes */
 @layer components {
+  .preloader {
+    z-index: 9999;
+  }
+
+  .preloader-sub {
+    letter-spacing: 0.3em;
+  }
+
   main {
     @apply w-full overflow-x-hidden;
   }
@@ -386,7 +394,7 @@ body {
   }
 
   #menu {
-    @apply radial-gradient relative mt-0 w-full px-5 py-20 md:mt-40 2xl:px-0 overflow-hidden;
+    @apply radial-gradient relative mt-0 w-full overflow-hidden px-5 py-20 md:mt-40 2xl:px-0;
 
     #m-left-leaf {
       @apply absolute -bottom-20 left-0 w-1/3 object-contain md:w-fit;
